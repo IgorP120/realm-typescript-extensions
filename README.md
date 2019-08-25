@@ -1,2 +1,7 @@
-# realm-typescript-extensions
-Strongly typed TypeScript schema definitions for Realm database
+# Typescript Extensions for Realm Database
+
+## Purpose
+
+## Examples
+
+### Logging

@@ -1,0 +1,14 @@
+{
+  "name": "realm-typescript-extensions",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "ts:watch": "tsc --watch"
+  },
+  "dependencies": {
+    "realm": "^2.29.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.2"
+  }
+}
