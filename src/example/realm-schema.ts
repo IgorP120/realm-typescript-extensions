@@ -1,7 +1,9 @@
 import { RealmSchema } from '../lib/realm-schema.types';
-import { Customer, EntityName } from './entities';
+import { EntityName, Customer, Order, EntityNameOpt } from './entities';
 
-export const customerSchema: RealmSchema<Customer, EntityName> = {
+interface Schema<TEntity extends object> extends RealmSchema<TEntity, EntityName, EntityName | EntityNameOpt> {};   
+
+export const customerSchema: Schema<Customer> = {
   name: "Customer",
   primaryKey: "id",
   properties: {
@@ -12,4 +14,17 @@ export const customerSchema: RealmSchema<Customer, EntityName> = {
     phone: "string?"
   }
 };
+
+export const orderSchema: Schema<Order> = {
+  name: "Order",
+  primaryKey: "id",
+  properties: {
+    id: "int",
+    date: "date",
+    customer: "Customer?",
+    shipped: "bool?"
+  }
+};
+
+
 
