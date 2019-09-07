@@ -1,3 +1,6 @@
+export type ElementType<T extends ReadonlyArray<unknown>> = T extends ReadonlyArray<infer E> ? E : never;
+
+
 /** Remove types from T that are assignable to U */ 
 export type Diff<T, U> = T extends U ? never : T;  
 

@@ -2,6 +2,8 @@ import { Nullable } from '../lib/generic.types';
 
 export type EntityName = "Customer" | "Product" | "Order" | "OrderItem";
 
+export type EntityNameOpt = "Customer?" | "Product?" | "Order?" | "OrderItem?" 
+
 export interface Customer {
   id: number;
   readonly name: string;
@@ -22,8 +24,8 @@ export interface Product {
 
 export interface Order {
   readonly id: number;
-  readonly data: Date;
-  readonly customer: Customer;
+  readonly date: Date;
+  readonly customer: Nullable<Customer>;
   readonly shipped: Nullable<boolean>;
 }
 

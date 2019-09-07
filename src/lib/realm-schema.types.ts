@@ -54,8 +54,8 @@ type RealmFieldsIncludingPartial<T extends object, TEntityName extends string> =
 };
 
 /** Strongly-typed Realm schema definition */
-export interface RealmSchema<TEntity extends object, TEntityName extends string> {
+export interface RealmSchema<TEntity extends object, TEntityName extends string, TEntityNameOpt extends string> {
   readonly name: TEntityName;
-  readonly properties: RealmFields<TEntity, TEntityName>;
+  readonly properties: RealmFields<TEntity, TEntityName | TEntityNameOpt>;
   readonly primaryKey?: keyof TEntity;
 }
