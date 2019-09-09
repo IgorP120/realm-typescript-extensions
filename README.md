@@ -1,6 +1,6 @@
 # Typescript Extensions for Realm Database
 
-Strongly typed Realm database schemas enforces proper synchronization with domain models
+Use RealmSchema generic type to create strongly-typed Realm database schemas to enforce compile-time synchronization with domain models.
 
 ## Example
 
