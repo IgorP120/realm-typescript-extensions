@@ -5,8 +5,10 @@ Strongly typed Realm database schemas enforces proper synchronization with domai
 ## Example
 
 <video width="320" height="240" controls>
-  <source src="video/video/realm-ts-sample1.mp4" type="video/mp4">
+  <source src="video/realm-ts-sample1.mp4" type="video/mp4">
 </video>
+
+![video](video/realm-ts-sample1.mp4)
 
 ```typescript
 import { Nullable } from '../lib/generic.types';
